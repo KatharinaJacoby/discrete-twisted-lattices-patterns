@@ -1,3 +1,16 @@
+# ⚠️ IMPORTANT LICENSE NOTICE
+
+**This repository contains a scientific manuscript, not software.**
+
+While the repository is tagged with the BSD 3-Clause license for technical classification purposes, the **content (manuscript and data tables)** is governed by the following terms:
+
+1.  **Attribution:** You must credit Dr. Katharina Jacoby.
+2.  **No Commercial Use:** You cannot sell this work.
+3.  **No Derivatives:** You **cannot modify, adapt, or rewrite** this text or the data tables.
+4.  **Code Exclusion:** No source code or raw data is included.
+
+*For the full legal text, see the LICENSE file or contact the author.*
+
 BSD 3-Clause License
 
 Copyright (c) 2026, Katharina
