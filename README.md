@@ -19,6 +19,3 @@ The primary observation is a distinct **pattern of convergence**:
 3.  **Topology-Dependent Plateaus:** The two topologies converge to **distinct, topology-specific constant values**, suggesting the correction factor is an intrinsic property of the global boundary condition rather than a numerical artifact.
 
 This work does not claim to have discovered a universal physical constant. Instead, it highlights a reproducible **behavioral pattern** in discrete systems: a transition from under-resolved instability to scale-invariant stability. The specific magnitude of the plateau depends on simulation parameters, but the **existence of the plateau itself** appears robust.
-
----# Pattern-Recognition-in-Discrete-Twisted-Lattices
-A Descriptive Study of Scaling Behavior and Finite-Size Effects
