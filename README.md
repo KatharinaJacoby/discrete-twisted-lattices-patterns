@@ -55,7 +55,7 @@ $$ \frac{(K_c \times \lfloor L/2 \rfloor)_{KB}}{(K_c \times \lfloor L/2 \rfloor)
 ## 📂 Data Availability
 
 All raw simulation data is available in the `/data` directory.
-*   `v1_coarse/`: Original data (contains artifacts, for historical reference).
+*   `v1_coarse/`: Contains the original data (note: contains grid artifacts).
 *   `v2_highres/`: Corrected high-resolution data (current best estimate).
 
 **Reproducibility:**
