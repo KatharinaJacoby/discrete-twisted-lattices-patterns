@@ -1,4 +1,4 @@
-# Pattern Recognition in Discrete Twisted Lattices
+# Pattern Recognition in Discrete Twisted Lattices (March 2026)
 ## A Descriptive Study of Scaling Behavior and Finite-Size Effects
 
 **Author:** Dr. Katharina Jacoby  
