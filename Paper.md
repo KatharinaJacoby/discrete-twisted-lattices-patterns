@@ -2,18 +2,17 @@
 
 **Author:** Dr. Katharina Jacoby  
 **Date:** April 10, 2026  
-
 ---
-
-> **Publication Note:** This manuscript serves as a formal revision of the preliminary report *Pattern Recognition in Discrete Twisted Lattices* (Jacoby, March 2026). It incorporates high-resolution numerical data obtained via binary search and harmonized distance metrics (Euclidean) to correct previous observations regarding "perfect" constants and inter-topological ratios.
-
+> **Publication Note:** This manuscript supersedes the preliminary report *Pattern Recognition in Discrete Twisted Lattices* (Jacoby, March 2026). It corrects previous observations regarding "perfect" constants and the inter-topological ratio by incorporating high-resolution binary search ($10^{-8}$ tolerance) and harmonized distance metrics (Euclidean). The preliminary version contained numerical artifacts and mixed metrics that led to a spurious $\sqrt{2}$ ratio.
 ---
 
 ## Abstract
 
-This manuscript documents a re-evaluation of numerical scaling behaviors in discrete photonic lattices with anti-periodic boundary conditions ("twists"). In the initial study (March 2026), we reported apparent "perfect" mathematical constants for the correction factor $\alpha$ and a $\sqrt{2}$ ratio between the Klein Bottle and Twisted Torus topologies. Subsequent high-resolution analysis using binary search (tolerance $10^{-8}$) and metric harmonization has revealed that these specific values were largely artifacts of search grid quantization and inconsistent distance metrics (Manhattan vs. Euclidean).
+This manuscript documents a re-evaluation of numerical scaling behaviors in discrete photonic lattices with anti-periodic boundary conditions ("twists"). In the initial study (March 2026), we noted a transition from finite-size deviation to a stable regime, with apparent "perfect" mathematical constants emerging. However, subsequent high-resolution analysis revealed these constants were artifacts of grid quantization.
 
-Using a refined Discrete Coupled Mode Equation (CME) framework, we present data for lattice sizes up to $N=1024$ ($L=32$). The primary robust finding is a step-wise dependence of the critical curvature $K_c$ on $\lfloor L/2 \rfloor$ rather than $L$. Specifically, adjacent lattice sizes sharing the same $\lfloor L/2 \rfloor$ value yield identical $K_c$ values within numerical precision. Furthermore, when both topologies are simulated using the Euclidean metric, they converge to the same scaling product $P = K_c \times \lfloor L/2 \rfloor \approx 1.11072$, contradicting the previously hypothesized universal $\sqrt{2}$ ratio. These findings suggest that the scaling behavior is governed by the interplay between the discrete grid resolution and the boundary condition, with the specific scaling constant depending on the chosen metric. No analytical proof is provided; these results are presented as descriptive numerical observations.
+Furthermore, we identified that the previously reported $\sqrt{2}$ ratio between the Klein Bottle and Twisted Torus topologies was an artifact of comparing different distance metrics (Manhattan for Torus, Euclidean for Klein Bottle). When both topologies are simulated using the **same Euclidean metric**, they converge to the **same** scaling product ($P \approx 1.11072$).
+
+The primary robust finding is a step-wise dependence of the critical curvature $K_c$ on $\lfloor L/2 \rfloor$ rather than $L$. Within the tested range ($N=4$ to $N=1024$), this pattern holds for both topologies and both metrics. The specific value of the scaling constant depends on the metric (Euclidean $\approx 1.1107$, Manhattan $\approx \pi/4$), but the scaling law itself is robust. These findings are presented as descriptive numerical observations specific to the Discrete Coupled Mode Equation (CME) framework, pending analytical derivation.
 
 ---
 
@@ -23,7 +22,7 @@ In continuous field theory, the critical curvature $K_c$ of a toroidal manifold 
 
 This study addresses a descriptive question: **How does the critical curvature $K_c$ numerically behave as the number of nodes $N$ increases, and does this behavior depend on the lattice dimension $L$ or a derived quantity?**
 
-Crucially, this manuscript serves as a record of the numerical verification process. Initial observations of "perfect" constants prompted a re-examination of the search algorithms. This re-evaluation led to the identification of grid quantization artifacts and the subsequent documentation of a more consistent, albeit complex, numerical pattern.
+Crucially, this manuscript serves as a record of the numerical verification process. Initial observations prompted a re-examination of search algorithms and metric consistency. This re-evaluation led to the identification of grid quantization artifacts and the correction of a spurious topological ratio.
 
 ---
 
@@ -36,13 +35,13 @@ Crucially, this manuscript serves as a record of the numerical verification proc
     *   **Twisted Torus:** Anti-periodic boundary in one dimension ($x$).
     *   **Klein Bottle:** Anti-periodic boundary in both dimensions ($x, y$).
 
-### 2.2 Numerical Precision and Artifact Detection
-A central component of this study was the verification of numerical stability through iterative refinement.
-1.  **Initial Scan:** Linear scans with coarse steps were performed in the preliminary study. These yielded values that appeared to match "perfect" rational constants.
-2.  **Re-evaluation:** Suspecting grid-induced bias, we implemented a **two-stage binary search** with a tolerance of $10^{-8}$.
-3.  **Metric Harmonization:** To isolate topological effects, we ensured both topologies used the **Euclidean distance metric** for the revised analysis. The original Torus study used Manhattan distance; we re-ran these simulations with Euclidean distance for direct comparison.
+### 2.2 Numerical Precision and Metric Harmonization
+A central component of this study was the verification of numerical stability and metric consistency.
+1.  **Initial Scan:** Linear scans with coarse steps yielded values that appeared to match "perfect" rational constants.
+2.  **Re-evaluation:** We implemented a **two-stage binary search** with a tolerance of $10^{-8}$. The "perfect" constants disappeared, revealing slight drifts.
+3.  **Metric Harmonization:** We re-ran the Twisted Torus simulations using the **Euclidean metric** (matching the Klein Bottle script) to ensure a fair comparison. Previous comparisons had mixed Manhattan (Torus) and Euclidean (KB) metrics.
 
-**Note:** All results presented in this paper are derived from the high-resolution binary search method with Euclidean metric unless otherwise specified.
+**Note:** All results presented in this paper are derived from the high-resolution binary search method. Where applicable, we present data for both Euclidean and Manhattan metrics to demonstrate metric dependence.
 
 ### 2.3 Metrics
 *   **Observed Critical Curvature ($K_c$):** The coupling strength where the system transitions from static to oscillatory (defined as Min_Rho < 0).
@@ -60,17 +59,15 @@ The high-resolution data indicates that $K_c$ does not vary continuously with $L
 **Table 1: Paired $K_c$ Values (High-Resolution, Euclidean Metric)**
 | L | $\lfloor L/2 \rfloor$ | $K_c$ (Klein Bottle) | $K_c$ (Twisted Torus) |
 |---|---|---|---|
-| 2 | 1 | 1.11072073 | 1.11072073 |
-| 3 | 1 | 1.11072073 | 1.11072073 |
-| 4 | 2 | 0.55536037 | 0.55536037 |
-| 5 | 2 | 0.55536037 | 0.55536037 |
-| 6 | 3 | 0.37024024 | 0.37024024 |
-| 8 | 4 | 0.27768019 | 0.27768019 |
+| 2 | 1 | 1.1107207 | 1.1107207 |
+| 3 | 1 | 1.1107207 | 1.1107207 |
+| 4 | 2 | 0.5553604 | 0.5553604 |
+| 5 | 2 | 0.5553604 | 0.5553604 |
 
 **Observation:** Adjacent lattice sizes with identical $\lfloor L/2 \rfloor$ values yield $K_c$ values that are identical within the limits of numerical precision ($10^{-8}$). This suggests that, numerically, the effective resolution of the twist boundary is determined by the integer floor of half the side length.
 
 ### 3.2 Product Stability and Metric Dependence
-The product $P = K_c \times \lfloor L/2 \rfloor$ stabilizes to a near-constant value for each topology within the tested range. However, the value of this constant depends on the distance metric used.
+The product $P = K_c \times \lfloor L/2 \rfloor$ stabilizes to a near-constant value for each topology. However, the value of this constant depends on the distance metric used.
 
 | Topology | Metric | Product $P$ (Mean) | Stability Observation |
 |---|---|---|---|
@@ -85,7 +82,7 @@ The ratio of scaling products between the two topologies is:
 $$ \frac{P_{KB, \text{Eucl}}}{P_{Torus, \text{Eucl}}} \approx 1.0000 $$
 $$ \frac{P_{KB, \text{Eucl}}}{P_{Torus, \text{Manh}}} \approx 1.4142 \approx \sqrt{2} $$
 
-**Conclusion:** The $\sqrt{2}$ ratio is not a universal topological constant but a consequence of the specific combination of metrics used in the initial study. When metrics are harmonized, the ratio vanishes.
+**Conclusion:** The $\sqrt{2}$ ratio is **not** a universal topological constant. It is a consequence of the specific combination of metrics used in the initial study. When metrics are harmonized, the ratio vanishes.
 
 ---
 
@@ -126,7 +123,7 @@ These findings are presented as descriptive records of numerical behavior. Futur
 
 ## Appendix: Data Availability
 
-Raw simulation data supporting these observations is available in this repository.
+Raw simulation data supporting these observations is available in the repository.
 
 The data is provided in standard CSV format to allow for independent verification of the statistical analysis. Source code is available upon request for collaborative verification.
 
