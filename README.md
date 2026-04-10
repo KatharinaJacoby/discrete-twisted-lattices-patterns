@@ -1,6 +1,5 @@
 # Pattern Recognition in Discrete Twisted Lattices
 
-> **Status:** 🚧 Active Exploration / Descriptive Findings  
 > **Author:** Dr. Katharina Jacoby  
 > **Date:** April 10, 2026  
 
@@ -93,5 +92,6 @@ Interested researchers are welcome to contact me for:
 *   Access to my source codes.
 *   Collaborative verification of the $\sqrt{2}$ hypothesis.
 *   Discussion of analytical derivations.
+*   if you want to cite this paper please go to https://philpeople.org/profiles/katharina-jacoby/publications
 
 **Email:** k.jacoby@posteo.de
