@@ -72,9 +72,9 @@ Data is provided in standard CSV format. You can load these files in any data an
 
 ## 📄 Read the Full Story
 
-*   **[Paper.md](./paper.md)**: The formal manuscript detailing our methodology, data, and cautious conclusions. (Updated April 10, 2026)
-*   **[HISTORY.md](./history.md)**: A timeline of our research journey, including the discovery of grid artifacts.
-
+*   **[Pattern Recognition in Discrete Twisted Lattices.md](./Pattern%20Recognition%20in%20Discrete%20Twisted%20Lattices.md)**: Formal manuscript with methodology, data, and conclusions. (Updated April 10, 2026)
+*   **[Non-Tech Companion Guide: Understanding the Grid, the Glitch, and the Geometry.md](./Non-Tech%20Companion%20Guide%20Understanding%20the%20Grid%20the%20Glitch%20and%20the%20Geometry.md)**: Accessible version explaining the paper for non-math readers.
+*   **[HISTORY.md](./history.md)**: Timeline of the research journey, including discovery of grid artifacts.
 ---
 
 ## 🌱 Let's Talk!
