@@ -36,7 +36,7 @@ To ensure a fair comparison, we re-ran the Twisted Torus simulations using the *
 *   **Surprising Result:** The previously hypothesized $\sqrt{2}$ ratio between topologies **disappeared** when the metric was harmonized. Both topologies converged to the *same* scaling product under Euclidean distance.
 *   **Takeaway:** The ratio was likely an artifact of comparing different distance metrics, not a fundamental topological property.
 
-### Phase 4: Sensitivity Analysis — The "Smooth Twist" Test (April 18, 2026)
+### Phase 4: Sensitivity Analysis — The "Smooth Twist" Test
 To address the open question of whether the $\lfloor L/2 \rfloor$ dependence is a fundamental property of discrete lattices or an artifact of the boundary condition implementation, we replaced the **hard discontinuous twist** (`if dx > L/2: -1`) with smooth alternatives.
 
 **Test 1: Smooth Cosine Twist (Euclidean Metric)**
@@ -57,7 +57,7 @@ To confirm this wasn't an artifact of the specific cosine function, we tested tw
 
 *   **Result:** Even the weakest smooth twist destabilizes the system at $K=0$. No stable phase exists. No $K_c$ can be measured.
 
-**Conclusion:** The $\lfloor L/2 \rfloor$ scaling pattern is **not a universal law** of discrete lattices. It is a direct consequence of the **hard, discontinuous boundary condition**. The pattern vanishes entirely when the boundary is smoothed, regardless of the smoothing function or its amplitude.
+**Conclusion:** The $\lfloor L/2 \rfloor$ scaling pattern is **not a universal law** of discrete lattices. It is a direct consequence of the **hard, discontinuous boundary condition**. The pattern vanishes entirely when the boundary is smoothed, regardless of the smoothing function or its amplitude. The pattern exists only because the Hard system has a stable phase to transition from. The Smooth system has no stable phase, so the pattern vanishes.
 
 ---
 
