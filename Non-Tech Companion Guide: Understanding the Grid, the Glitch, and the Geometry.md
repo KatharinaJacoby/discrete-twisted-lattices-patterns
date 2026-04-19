@@ -6,7 +6,7 @@
 
 ## What the Paper is About:
 
-This paper documents a journey through a digital landscape where geometry meets computation—and where things turned out to be wrong **three times** before getting the final answer.
+This paper documents a journey through a digital landscape where geometry meets computation—and where interesting patterns turned out to be wrong **three times** before getting the final answer.
 
 We simulated two "twisted" shapes—a **Twisted Torus** and a **Klein Bottle**—on a computer grid to see how they behave as they grow larger. Initially, our coarse measurements suggested we had found "perfect" mathematical constants. Higher precision revealed these were **illusions created by the grid itself**.
 
@@ -82,14 +82,14 @@ We modified our simulation to replace the **hard sign flip** (an instant jump fr
 1.  **Linear Ramp:** A gradual slope from +1 to -1.
 2.  **Soft Cosine:** A gentle wave that fades from +1 to -1.
 
-### The Shocking Result
+### The Interesting Result
 When we used these smooth boundaries, the system **collapsed immediately**.
 *   In the "Hard" version, the system was stable at low energy ($K=0$) and only became unstable at a specific threshold ($K_c$). This threshold created the "steps" we observed.
-*   In the "Smooth" version, the system was **unstable from the very start** ($K=0$). It never had a stable phase. The "threshold" ($K_c$) disappeared entirely.
+*   In the "Smooth" version, the system was **unstable from the very start** ($K=0$). It never had a stable phase. The "threshold" ($K_c$) disappeared entirely. 
 
-**Conclusion:** The "Half-Size Rule" was **not a law of nature**. It was a side effect of the **sharp, digital boundary** we used. The pattern only exists because the grid has to deal with an instant, impossible flip. If you smooth out the flip, the pattern vanishes.
+**Conclusion:** The "Half-Size Rule" was **not a pattern of nature**. It was a side effect of the **sharp, digital boundary** we used. The pattern only exists because the grid has to deal with an instant, impossible flip. If you smooth out the flip, the pattern vanishes. The pattern exists only because the Hard system has a stable phase to transition from. The Smooth system has no stable phase, so the pattern vanishes.
 
-This teaches us a vital lesson: **Sometimes, the "laws" we find in simulations are just the scars left by our own simplifications.**
+This teaches us to stay vigilant: **Sometimes, the "laws" we find in simulations are caused by our own simplifications.**
 
 ---
 
