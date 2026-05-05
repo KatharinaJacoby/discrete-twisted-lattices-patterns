@@ -1,6 +1,8 @@
 # Pattern Recognition in Discrete Twisted Lattices: A Descriptive Study of Scaling Behavior and Finite-Size Effects
 
 ### A Non-Technical Companion Guide: Understanding the Grid, the Glitch, and the Geometry
+**Author:** Dr. Katharina Jacoby  
+**Date:** April 29, 2026
 
 ---
 
