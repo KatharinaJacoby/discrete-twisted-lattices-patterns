@@ -7,7 +7,7 @@
 
 ## 🤝 A Note on Collaboration & Transparency
 
-Welcome! This repository documents an ongoing, iterative journey into the scaling behavior of discrete photonic lattices with anti-periodic boundary conditions. 
+Welcome! This repository documents an ongoing, iterative journey into the scaling behavior of discrete photonic lattices with anti-periodic boundary conditions. The full dataset, simulation code, and experimental logs are permanently archived on Zenodo. 
 
 In the first 14 days, the Pattern Recognition in Discrete Twisted Lattices repo alone has received over 300 unique clones and keeps steady above 300. Thanks on the massive engagement with my repos! ✊🏽
 
