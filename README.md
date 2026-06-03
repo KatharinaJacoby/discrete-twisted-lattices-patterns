@@ -1,4 +1,5 @@
 # Pattern Recognition in Discrete Twisted Lattices
+> [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.20522335.svg)](https://doi.org/10.5281/zenodo.20522335)
 
 > **Author:** Dr. Katharina Jacoby  
 > **Date:** Updated: May 03, 2026
